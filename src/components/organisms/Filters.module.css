@@ -1,0 +1,10 @@
+.filters { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 23px; position: relative; }
+.filters__period { display: flex; align-items: center; gap: 8px; padding: 0 10px; border: 1px solid var(--control-border); background: #fff; border-radius: 7px; color: var(--muted); max-width: 100%; }
+.filters__period select, .filters__select { border: 0; color: var(--muted); font-size: 1rem; background: transparent; padding: 8px; max-width: 100%; min-height: 44px; }
+.filters__select { border: 1px solid var(--control-border); border-radius: 7px; background: #fff; }
+.filters__divider { width: 1px; height: 22px; background: #d2dae6; }
+.filters__timezone { margin-left: auto; font-size: .875rem; color: var(--muted); }
+.filters__srOnly { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+.filters__dates { display: flex; flex-wrap: wrap; gap: 12px; width: 100%; }
+.filters__dates p { color: #a13c32; font-size: .875rem; align-self: end; padding-bottom: 10px; }
+@media (max-width: 700px) { .filters { gap: 8px; } .filters__timezone { display: none; } .filters__select { max-width: 100%; } }

@@ -1,0 +1,7 @@
+.stat { padding: 21px 23px; background: white; border: 1px solid var(--border); border-radius: var(--radius); display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; overflow-wrap: anywhere; }
+.stat__top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; color: var(--muted); font-size: 1rem; font-weight: 500; }
+.stat__icon { background: #ecf1f7; color: var(--muted); border-radius: 8px; padding: 8px; }
+.stat__value { font-size: clamp(1.625rem, 2.7vw, 2.1875rem); font-weight: 600; line-height: 1.2; letter-spacing: -1.2px; overflow-wrap: anywhere; }
+.stat__note { color: var(--muted); font-size: .875rem; }
+.stat--accent { background: #dae5f5; border-color: #c8d7ec; }
+.stat--accent .stat__icon { background: #c2d4ee; color: var(--primary); }

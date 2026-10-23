@@ -1,0 +1,6 @@
+.form { display: grid; gap: 18px; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 7px; }
+.form__hint { font-size: .875rem; color: var(--muted); line-height: 1.6; }
+.form__error { background: #fff0eb; border: 1px solid #f3d6cb; border-radius: 7px; padding: 12px; color: #9b3b2c; font-size: .875rem; line-height: 1.5; }
+@media (max-width: 480px) { .form__row { grid-template-columns: 1fr; } }

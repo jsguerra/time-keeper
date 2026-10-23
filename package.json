@@ -1,0 +1,41 @@
+{
+  "name": "time-keeper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"tsx watch server/index.ts\" \"vite\"",
+    "build": "npm run typecheck && vite build && tsc -p tsconfig.server.json",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.server.json --noEmit",
+    "start": "node dist/server/server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:a11y": "npm run build && tsx tests/accessibility.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@testing-library/jest-dom": "^6.9.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "^6.0.0",
+    "concurrently": "^9.2.0",
+    "jsdom": "^28.0.0",
+    "playwright": "^1.56.0",
+    "supertest": "^7.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0",
+    "vitest": "^4.0.0"
+  }
+}

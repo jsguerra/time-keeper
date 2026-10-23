@@ -1,0 +1,5 @@
+.modal { margin: auto; border: 1px solid var(--border); border-radius: 18px; padding: 26px; width: min(530px, calc(100% - 32px)); max-height: calc(100dvh - 32px); color: var(--text); box-shadow: 0 30px 100px #0c203b33; }
+.modal::backdrop { background: #10223b70; backdrop-filter: blur(4px); }
+.modal__heading { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 24px; }
+.modal__heading h2 { font-size: 1.375rem; font-weight: 600; letter-spacing: -.5px; }
+.modal__heading p { color: var(--muted); font-size: .875rem; margin-top: 7px; line-height: 1.6; }

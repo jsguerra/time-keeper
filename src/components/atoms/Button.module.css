@@ -1,0 +1,5 @@
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid transparent; border-radius: 7px; padding: 10px 15px; font-size: 1rem; font-weight: 600; min-height: 44px; min-width: 44px; white-space: normal; text-align: center; }
+.button--primary { color: #fff; background: var(--primary); box-shadow: 0 2px 2px #0d254710; }
+.button--secondary { color: var(--text); background: #fff; border-color: var(--control-border); }
+.button--ghost { color: var(--primary); background: transparent; padding-inline: 8px; }
+.button--danger { color: #a13c32; background: #fff1ee; border-color: #f5d9d2; }

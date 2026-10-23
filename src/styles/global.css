@@ -1,0 +1,27 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  --text: #172b4d;
+  color: var(--text);
+  background: #f1f3f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --muted: #425570;
+  --border: #dfe4ea;
+  --control-border: #718096;
+  --surface: #fff;
+  --radius: 14px;
+}
+body { font-size: 1rem; line-height: 1.5; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid var(--primary-dark); outline-offset: 3px; box-shadow: 0 0 0 3px #fff; }
+button:disabled { opacity: .55; }
+button { transition: background .15s, box-shadow .15s; }
+button:hover:not(:disabled) { filter: brightness(.96); }
+input, select, textarea { min-width: 0; }
+svg { flex-shrink: 0; }
+::selection { background: #b3cdf2; color: var(--primary-dark); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

@@ -1,0 +1,6 @@
+.field { display: grid; gap: 7px; min-width: 0; }
+.field__label { font-size: .875rem; color: var(--muted); font-weight: 600; }
+.field__hint { font-size: .875rem; color: var(--muted); line-height: 1.5; }
+.field__control { width: 100%; border: 1px solid var(--control-border); border-radius: 7px; background: #fff; color: var(--text); padding: 10px 11px; min-height: 44px; font-size: 1rem; }
+.field__control::placeholder { color: var(--muted); }
+.field__control[aria-invalid="true"] { border: 2px solid #a13c32; }

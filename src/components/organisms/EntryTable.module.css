@@ -1,0 +1,24 @@
+.entries { border: 1px solid var(--border); border-radius: var(--radius); background: #fff; overflow: hidden; }
+.entries__heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 22px 24px; gap: 12px; }
+.entries__heading h2 { font-size: 1rem; font-weight: 600; display: flex; gap: 9px; align-items: center; }
+.entries__heading h2 span { font-size: .875rem; padding: 3px 7px; background: #e4ebf5; color: var(--muted); border-radius: 5px; }
+.entries__heading p { font-size: .875rem; color: var(--muted); margin-top: 6px; }
+.entries__scroll { overflow-x: auto; position: relative; margin: 5px; }
+.entries__table { width: 100%; text-align: left; white-space: nowrap; }
+.entries__table th { font-size: .875rem; font-weight: 500; letter-spacing: .7px; color: var(--muted); padding: 13px 17px; border-block: 1px solid #e7ecf2; background: #f8fbfe; }
+.entries__table td { padding: 15px 17px; font-size: 1rem; color: var(--muted); border-bottom: 1px solid #eaeef4; }
+.entries__table tr:last-child td { border: 0; }
+.entries__table th:first-child, .entries__table td:first-child { padding-left: 24px; }
+.entries__project { display: flex; gap: 10px; align-items: center; }
+.entries__project > span { width: 9px; height: 9px; border-radius: 3px; flex-shrink: 0; }
+.entries__project strong { color: var(--text); font-size: .875rem; font-weight: 500; }
+.entries__project p { margin-top: 4px; width: 260px; white-space: normal; overflow-wrap: anywhere; }
+.entries__person { display: flex; gap: 7px; align-items: center; }
+.entries__avatar { width: 34px; height: 34px; flex-shrink: 0; background: #e3eaf3; color: var(--muted); border-radius: 50%; display: grid; place-items: center; font-size: .875rem; font-weight: 600; text-transform: uppercase; }
+.entries__table .entries__duration { font-variant-numeric: tabular-nums; color: var(--text); }
+.entries__table .entries__cost { color: var(--text); font-weight: 600; }
+.entries__empty { min-height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; padding: 30px; color: var(--muted); border-top: 1px solid #e8edf4; }
+.entries__empty h3 { color: var(--muted); font-size: 1rem; font-weight: 500; }
+.entries__empty p { color: var(--muted); font-size: .875rem; max-width: 340px; line-height: 1.6; }
+.entries__srOnly { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+@media (max-width: 550px) { .entries__heading { padding: 17px; } .entries__heading p { display: none; } }
